@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ASE2024 Assignment</name>
+    </assembly>
+    <members>
+        <member name="M:ASE2024_Assignment.Form1.#ctor">
+            <summary>
+            Initializes the form and graphics object.
+            </summary>
+        </member>
+        <member name="M:ASE2024_Assignment.Form1.button1_Click(System.Object,System.EventArgs)">
+            <summary>
+            Handles the Run button click event.
+            Executes the commands entered in the ProgramWindow.
+            </summary>
+        </member>
+        <member name="M:ASE2024_Assignment.Form1.MoveTo(System.Int32,System.Int32)">
+            <summary>
+            Moves the pen to the specified coordinates.
+            </summary>
+        </member>
+        <member name="M:ASE2024_Assignment.Form1.DrawTo(System.Int32,System.Int32)">
+            <summary>
+            Draws a line from the current pen position to the specified coordinates.
+            </summary>
+        </member>
+        <member name="M:ASE2024_Assignment.Form1.DrawCircle(System.Int32)">
+            <summary>
+            Draws a circle at the current pen position.
+            </summary>
+            <param name="radius">The radius of the circle.</param>
+            <exception cref="T:System.ArgumentOutOfRangeException">Thrown if the radius is negative.</exception>
+        </member>
+        <member name="M:ASE2024_Assignment.Form1.DrawRect(System.Int32,System.Int32)">
+            <summary>
+            Draws a rectangle at the current pen position.
+            </summary>
+            <param name="width">The width of the rectangle.</param>
+            <param name="height">The height of the rectangle.</param>
+            <exception cref="T:System.ArgumentOutOfRangeException">Thrown if dimensions are negative.</exception>
+        </member>
+        <member name="M:ASE2024_Assignment.Form1.ChangePenColor(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Changes the pen color using RGB values.
+            </summary>
+            <param name="r">Red value (0-255).</param>
+            <param name="g">Green value (0-255).</param>
+            <param name="b">Blue value (0-255).</param>
+            <exception cref="T:System.ArgumentOutOfRangeException">Thrown if RGB values are out of range.</exception>
+        </member>
+        <member name="M:ASE2024_Assignment.Form1.WriteText(System.String)">
+            <summary>
+            Writes text at the current pen position.
+            </summary>
+            <param name="text">The text to write.</param>
+        </member>
+        <member name="M:ASE2024_Assignment.Form1.ExecuteMultilineProgram(System.String)">
+            <summary>
+            Executes a multi-line BOOSE program.
+            </summary>
+        </member>
+        <member name="T:ASE2024_Assignment.InvalidCommandException">
+            <summary>
+            Custom exception for invalid BOOSE commands.
+            </summary>
+        </member>
+        <member name="M:ASE2024_Assignment.Program.Main">
+            <summary>
+             The main entry point for the application.
+            </summary>
+        </member>
+        <member name="T:ASE2024_Assignment.ApplicationConfiguration">
+            <summary>
+             Bootstrap the application configuration.
+            </summary>
+        </member>
+        <member name="M:ASE2024_Assignment.ApplicationConfiguration.Initialize">
+            <summary>
+             Bootstrap the application as follows:
+             <code>
+             global::System.Windows.Forms.Application.EnableVisualStyles();
+             global::System.Windows.Forms.Application.SetCompatibleTextRenderingDefault(false);
+             global::System.Windows.Forms.Application.SetHighDpiMode(HighDpiMode.SystemAware);
+            </code>
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TestProject</name>
+    </assembly>
+    <members>
+        <member name="M:TestProject.UnitTest1.SetUp">
+            <summary>
+            Sets up a new instance of Form1 before each test.
+            </summary>
+        </member>
+        <member name="M:TestProject.UnitTest1.TestMoveTo_ChangesPenPosition">
+            <summary>
+            Tests if the MoveTo command correctly updates the pen position.
+            </summary>
+        </member>
+        <member name="M:TestProject.UnitTest1.TestDrawTo_UpdatesPenPosition">
+            <summary>
+            Tests if the DrawTo command updates the pen position.
+            </summary>
+        </member>
+        <member name="M:TestProject.UnitTest1.TestExecuteMultiLineProgram_ExecutesAllCommands">
+            <summary>
+            Tests if a multi-line BOOSE program executes all commands correctly.
+            </summary>
+        </member>
+        <member name="M:TestProject.UnitTest1.TestExecuteMultiLineProgram_InvalidCommand_ThrowsException">
+            <summary>
+            Tests handling of invalid commands in the multi-line program.
+            </summary>
+        </member>
+    </members>
+</doc>
